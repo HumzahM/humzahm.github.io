@@ -34,41 +34,48 @@
                 <img src="booth.png" style="width:25%">
             </figure>
             <p>Out of respect for Dr. Levy I won't share too much of the details of the current project online. My work is writing Python scripts
-                to run LLMs on massive amounts of (financial) data and closely analyze the output in terms of conditional probabilities.
+                to run LLMs on massive amounts of (financial) data and closely analyze the output in terms of the conditional probabilities of tokens.
+             </p>
+             <p>
+                <u>
+                    What I'm learning so far: Working with big data. A lot about LLMs and NLP I didn't know in the past. That I still really enjoy research.
+                </u>
              </p>
         <h3>Apollo Global Management - SWE Intern (May 2024 - Aug 2024)</h3>
             <figure>
                 <img src="apollo.png" style="width:25%">
-                <figcaption>Unfortunately I can't find a screenshot of the interface on any of my personal devices</figcaption>
+                <figcaption>Unfortunately I can't find a screenshot of what I built on any of my personal devices</figcaption>
             </figure>
             <p>I spent most of the summer working on one large scale webapp.
                 It was a website for one of the client teams to manage some large and complex email lists, including a maker-checker workflow and audit trail.
                 It was the first Python webapp being built at Apollo ISG so I had to work with some senior team members to learn how to deploy it
-                in the existing .NET enviroment
+                in the existing .NET enviroment. I also had to establish new tables in the database figure out processes to safely interact with existing data.
              </p>
-             <p>
-                    I was driven on this project knowing I was delivering actual value for
-                    Apollo. The team was wasting 15-20 man hours a week on this task when it should have been 5 minutes because each request had to 
-                    be ran from client teams to dev teams to IT teams, done through SQL and tested in UAT before going into production.
+             <p>I was driven on this project knowing I was delivering actual value for Apollo. Without this every single
+                change had to be ran be ran from client teams to dev teams to IT teams, done through SQL and tested in UAT before going into production.
+                This was 2-3 man hours each and they had on average 5 or more requests a week. 
              </p>
             <p> <u>What I learned over the summer: How to navigate the bureaucracy of a large corporation to get things done. How to take a project from nothing to production. 
                     What its like to sit in an incident review meeting after you broke production while deploying.</u>
             </p>
-        <h3>Markets in "Event Time" Research with Dr. Larry Harris (Oct 2023 to Ma 2024)</h3>
+        <h3>Markets in "Event Time" Research with Dr. Larry Harris (Oct 2023 to Mar 2024)</h3>
             <figure>
                 <img src="event_time1.jpg" style="width:35%">
                 <img src="event_time2.jpg" style="width:35%">
                 <figcaption>Some of the dozens of figures I made</figcaption>
             </figure>
-            <p>I worked on a project studying the markets in "event time". Right now we think about markets in calendar time - Today and Tomorrow, January and February, etc.
-                The project asked what if we looked at it in terms of market activity? How do we split 30 years (360 calendar months) into 360 periods of equal event time?
-                I had to build a model to figure out what that means to setup the market in terms of market activity. I ended up doing a front and back rolling average
-                of number of trades, which was challenging since the number of trades has exponentially increased over time. 
-                The results were generally interesting but unfortunately not groundbreaking enough to be worth publishing.
+            <p> Right now we think about markets in terms of equal chunks of calendar time - days, weeks, months, years.
+                The project asked what if we looked at markets in terms of activity? For example, how do we split 30 years (360 calendar months) into 360 periods of equal event time?
+                I loved this project so much because we didn't have a "right" answer to this. We explored some various things:
             </p>
+            <ol>
+                <li>Number of Trades - this has grown exponentially over time. At the same time trade size has gone down. We settled on using this with a 10 year front and back rolling average. </li>
+                <li>Return Dispersion - we found this had a fairly high correlation with number of trades. However, RD has been affected by factors such as bid ask spreads becoming smaller over time.</li>
+                <li>Volume - not a very good measure. Becomes extremely heavily weighted on times the market is doing better.</li>
+            </ol>
             <p> <u>What I learned: Python, Pandas, and big data related work. That I really enjoy research. That messy code leads to
-                bad results and confusion and on my next project I need to have more discipline from day 1.
-            </u>
+                bad results and confusion and on my next project I need to have more discipline from day 1 and think about how everything will be scaled up
+                after the prototyping phase. </u>
             </p>
         <h3>NASA Johnson Space Center (Jun 2022 - Aug 2022 and Jun 2023 - Aug 2023)</h3>
             <figure>
@@ -77,12 +84,10 @@
             <p>I spent two summers at NASA Johnson Space Center through a program called the Summer Robotics Academy,
                 for graduating seniors on select FIRST Robotics Teams. After my first summer I asked to return and they kindly
                 said yes. The first summer I worked primarily on mechanical engineering and design tasks using CAD. The second summer 
-                I focused primarily on software related tasks. We also had a bomb squad inspired challenge - I was on the winning team. 
+                I focused primarily on software related tasks. We also had a bomb squad inspired challenge my second summer - I was on the winning team.
             </p>
     <h3>Other: I don't really like having a public portfolio (and Linkedin) and I hope one day I'll be at a point where I can quietly take everything offline.</h3>
-    <p>I don't want anyone to ever feel bad after looking at my page or feel as if they aren't doing enough. 
-        This page exists because I wanted to higlight some of my work in more space then a one pager resume.
-        I know a lot of people are struggling right now to land research or a summer internship.
+    <p>I know a lot of people are struggling right now to land research or a summer internship.
         Good luck and reach out to me if I can help you out!
     </p>
 </body>
