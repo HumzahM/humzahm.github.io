@@ -2,69 +2,52 @@
 <html>
 <head>
     <title>Humzah Merchant</title>
-    <style>
-        body {
-            max-width: 75%; /* Limits the width to 75% of the screen */
-            margin: 0 auto; /* Centers the paragraph horizontally */
-        }
-        figure {
-            margin: auto; /* Centers the figure horizontally */
-        }
-        figcaption {
-            font-size: smaller;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p>Last Updated: 12/13/2024</p>
     <h1>Hi, my name is Humzah Merchant.</h1>
-    <figure>
-        <img src="pic.jpg" style="width:25%">
-        <figcaption>I have 5 of this shirt</figcaption>
-    </figure>
-    <p><b>My email: humzahm@uchicago.edu</b></p>
-    <p><a href="https://www.linkedin.com/in/humzahmerchant">LinkedIn</a></p>
-    <p>I am a junior at UChicago, studying statistics and computer science. 
-    I really enjoy doing work at the intersection of statistics, engineering/computer science, and finance.
-    I find some of the problems there, including my research projects listed below, to be the perfect mix of intuitive enough that
-    anyone can understand them and their implications while also being complex, challenging, and require creativity to solve. 
-    If I'm not working I'm probably with friends or watching TV. Sometimes I'll make them watch TV with me.</p>
+    <div style="width: 600px; margin: 0 auto; display: flex; align-items: flex-start; gap: 20px; margin-bottom: 20px;">
+        <div style="flex-shrink: 0;">
+            <p><b>humzahm@uchicago.edu</b></p>
+            <p><a href="https://www.linkedin.com/in/humzahmerchant">LinkedIn</a></p>
+        </div>
+        <figure style="margin: 0;">
+            <img src="pic.jpeg" style="width:200px; display: block; margin: 0 auto;">
+            <figcaption style="text-align: center;">I have 5 of this shirt</figcaption>
+        </figure>
+    </div>    
+    <p>I am a junior at UChicago, interested in research at the intersection of statistics, computer science, and finance.</p>
+    <p>Things I like:</p>
+    <ul>
+        <li>Human interpretable problems and solutions.
+            Making it easy to <i>understand</i> a problem, why it matters, and always <b>why a solution works.</b></li>
+        <li>Working on problems and solutions that no one else have tackled yet.</li>
+        <li>A little bit of hustling and getting things done. 
+            At Apollo, when trying to deploy my (internal) webapp,
+            I was supposed to work with cybersecurity in order to get a port opened, which would take...forever.
+            When I looked closely at the server, I noticed 6002 was taken, 6003 was taken, through 6015,
+            except there was one missing, where an app had previously been deployed and then removed.
+            I tested and saw the port was still open, and then I then deployed my app to it.
+        </li>
+    </ul>
     <h2>My Experiences:</h2>
-        <h3>LLMs in Finance Research with Dr. Bradford Levy (Oct 2024 - Present)</h3>
+        <h3>LLMs and Financial Data Research Assistant with Dr. Bradford Levy (Oct 2024 - Present)</h3>
             <figure>
                 <img src="booth.png" style="width:25%">
             </figure>
-            <p>Out of respect for Dr. Levy I won't share too much of the details of the current project online. My work is writing Python scripts
-                to run LLMs on massive amounts of (financial) data and closely analyzing the output such as the conditional probabilities of tokens
-                and other patterns. I'm really enjoying this project right now.
-             </p>
-             <p>
-                <u>
-                    What I'm learning so far: Working with big data. A lot more about LLMs and NLP. That I still really enjoy research.
-                </u>
-             </p>
+            <p>We are approaching a specific problem in the analysis of financial data with LLMs from the perspective of both finance and 
+                the underlying machine learning, though unfortunately I can't share more information publically.</p>
         <h3>Apollo Global Management - SWE Intern (May 2024 - Aug 2024)</h3>
             <figure>
                 <img src="apollo.png" style="width:25%">
-                <figcaption>Unfortunately I can't find a screenshot of what I built on any of my personal devices</figcaption>
             </figure>
             <p>I spent most of the summer working on one large scale webapp.
-                It was a website for one of the client teams to manage some large and complex email lists, including a maker-checker workflow and audit trail.
-                It was the first Python webapp being built at Apollo ISG so I had to work with some senior team members to learn how to deploy it
-                in the existing .NET enviroment. I also had to establish new tables in the database and figure out processes to safely interact with existing data.
-             </p>
-             <p>I was driven on this project knowing I was delivering actual value for Apollo. Without this every single
-                change had to be ran be ran from client teams to dev teams to IT teams, done through SQL and tested in UAT before going into production.
-                This was 2-3 man hours each and they had on average 5 or more requests a week. 
-             </p>
-            <p> <u>What I learned over the summer: How to navigate the bureaucracy of a large corporation to get things done. How to take a project from nothing to production. 
-                    What its like to sit in an incident review meeting after you broke production while deploying.</u>
+                The challenge wasn't technical as much as learning to push a project through demo -> dev -> production and learning to navigate 
+                the bureaucracies of a large organization. 
             </p>
         <h3>Markets in "Event Time" Research with Dr. Larry Harris (Oct 2023 to Mar 2024)</h3>
             <figure>
-                <img src="event_time1.jpg" style="width:35%">
-                <img src="event_time2.jpg" style="width:35%">
-                <figcaption>Some of the dozens of figures I made</figcaption>
+                <img src="usc.jpg" style="width:25%">
             </figure>
             <p> Right now we think about markets in terms of equal chunks of calendar time - days, weeks, months, years.
                 The project asked what if we looked at markets in terms of activity? For example, how do we split 30 years (360 calendar months) into 360 periods of equal event time?
@@ -86,14 +69,11 @@
             <figure>
                 <img src="nasa.jpg" style="width:40%">
             </figure>
-            <p>I spent two summers at NASA Johnson Space Center through a program called the Summer Robotics Academy,
-                for graduating seniors on select FIRST Robotics Teams. After my first summer I asked to return and they kindly
-                said yes. The first summer I worked primarily on mechanical engineering and design tasks using CAD. The second summer 
-                I focused primarily on software related tasks. We also had a bomb squad inspired challenge my second summer - I was on the winning team.
+            <p>I spent two summers at NASA Johnson Space Center through a program called the Summer Robotics Academy.
+                The first summer I worked primarily on mechanical engineering tasks and the second summer 
+                I worked mostly on software related tasks. We also had a bomb squad inspired challenge my second summer - I was on the winning team.
+                The challenge was focused on communications in a field in the middle of JSC, so I proposed we use my dad's T-Mobile wifi pack. 
             </p>
-    <h3>Other: I don't really like having a public portfolio (and Linkedin) and I hope one day I'll be at a point where I can quietly take everything offline.</h3>
-    <p>I'm grateful for every opportunity I've ever got and I recognize that a lot of people are struggling right now.
-       If you are a first or second year student, feel free to reach out. 
-    </p>
+    <h3>Other: Feel free to reach out if you want to coffee chat</h3>
 </body>
 </html>

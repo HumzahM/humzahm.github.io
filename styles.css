@@ -1,0 +1,12 @@
+body {
+    max-width: 75%; /* Limits the width to 75% of the screen */
+    margin: 0 auto; /* Centers the paragraph horizontally */
+    font-family: 'Helvetica Neue', sans-serif; /* Applies font to body */
+    font-size: 20px;
+}
+figure {
+    margin: auto; /* Centers the figure horizontally */
+}
+figcaption {
+    font-size: smaller;
+}
