@@ -1,12 +1,59 @@
 body {
-    max-width: 75%; /* Limits the width to 75% of the screen */
-    margin: 0 auto; /* Centers the paragraph horizontally */
+    max-width: 50%; /* Instead of 75%, fixed width for better control */
+    margin: 0 auto; /* Centers all main content */
     font-family: 'Helvetica Neue', sans-serif; /* Applies font to body */
     font-size: 20px;
+    background-color: #f9f9f9; /* Very light background color */
+    line-height: 1.6; /* Improve readability */
 }
+
+h1, h2, h3, h4 {
+    text-align: center; /* Center titles for better visual balance */
+}
+
+h3 {
+    margin-top: 30px; /* Space out experience sections */
+    margin-bottom: 0px;
+}
+
+h4 {
+    margin-top: 0px;
+}
+
+a {
+    text-decoration: none; /* Remove underline by default */
+    color: #0072b1; /* LinkedIn-like blue color */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+div.intro-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
 figure {
     margin: auto; /* Centers the figure horizontally */
 }
+
+img {
+    width: 150px; /* Uniform width for all images */
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for pop */
+    border-radius: 8px; /* Slightly rounded corners */
+}
+
 figcaption {
     font-size: smaller;
+    text-align: center;
+    margin-top: 5px;
+}
+
+p {
+    margin-bottom: 20px; /* Better paragraph spacing */
 }

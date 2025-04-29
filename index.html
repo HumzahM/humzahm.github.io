@@ -17,26 +17,26 @@
         </figure>
     </div>    
     <p>I am a junior at UChicago, interested in research at the intersection of statistics, computer science, and finance.</p>
-    <p>Things I like:</p>
-    <ul>
-        <li>Human interpretable problems and solutions.
-            Making it easy to <i>understand</i> a problem, why it matters, and always <b>why a solution works.</b></li>
-        <li>Working on problems and solutions that no one else have tackled yet.</li>
-        <li>A little bit of hustling and getting things done. 
-            At Apollo, when trying to deploy my (internal) webapp,
-            I was supposed to work with cybersecurity in order to get a port opened, which would take...forever.
-            When I looked closely at the server, I noticed 6002 was taken, 6003 was taken, through 6015,
-            except there was one missing, where an app had previously been deployed and then removed.
-            I tested and saw the port was still open, and then I then deployed my app to it.
-        </li>
-    </ul>
+    <p>I like to take a human interpretable approach to everything I work on - always understanding <i>deeply</i>
+        the problem I'm working on, why it matters, and <b>why a solution works.</b> </p>
+        
+    <p>I like to get things done and I enjoy hustling (an appropriate amount.) 
+        My favorite story is how I saved months of time deploying my webapp at Apollo by 
+        carefully inspecting the servers to find open, unused ports - rather then go through
+        the long process of requesting a new one. I crashed the production servers 
+        for about an hour a few days later doing something else. I'm proud to say though,
+        I was the only intern who crashed prod that summer because I was the only intern 
+        who wanted their project in prod.
+    </p>
+
     <h2>My Experiences:</h2>
-        <h3>LLMs and Financial Data Research Assistant with Dr. Bradford Levy (Oct 2024 - Present)</h3>
+        <h3>Research Assistant with Dr. Bradford Levy (Oct 2024 - Present)</h3>
+        <h4>LLMs and Financial Data</h4>
             <figure>
                 <img src="booth.png" style="width:25%">
             </figure>
             <p>We are approaching a specific problem in the analysis of financial data with LLMs from the perspective of both finance and 
-                the underlying machine learning, though unfortunately I can't share more information publically.</p>
+                the underlying machine learning, though unfortunately I can't share more information publicly.</p>
         <h3>Apollo Global Management - SWE Intern (May 2024 - Aug 2024)</h3>
             <figure>
                 <img src="apollo.png" style="width:25%">
@@ -45,35 +45,25 @@
                 The challenge wasn't technical as much as learning to push a project through demo -> dev -> production and learning to navigate 
                 the bureaucracies of a large organization. 
             </p>
-        <h3>Markets in "Event Time" Research with Dr. Larry Harris (Oct 2023 to Mar 2024)</h3>
+        <h3>Research Assistant with Dr. Larry Harris (Oct 2023 - Mar 2024)</h3>
+        <h4>Markets in "Event Time"</h4>
             <figure>
                 <img src="usc.jpg" style="width:25%">
             </figure>
-            <p> Right now we think about markets in terms of equal chunks of calendar time - days, weeks, months, years.
-                The project asked what if we looked at markets in terms of activity? For example, how do we split 30 years (360 calendar months) into 360 periods of equal event time?
-                I enjoyed this project so much because we didn't have a "right" answer to this. We explored some various things:
-            </p>
-            <ol>
-                <li>Number of Trades - this has grown exponentially over time. At the same time trade size has gone down. We settled on using this with a 10 year front and back rolling average. </li>
-                <li>Return Dispersion - we found this had a fairly high correlation with number of trades. However, RD has been affected by factors such as bid ask spreads becoming smaller over time.</li>
-                <li>Volume - not a very good measure. Becomes extremely heavily weighted on times the market is doing better.</li>
-            </ol>
-            <p> The results were interesting though not too groundbreaking - the data becomes generally much less skewed, much more normal,
-                and possibly also more efficent (for example, autocorrelation of returns was much lower).
-            </p>
-            <p> <u>What I learned: Python, Pandas, and much more about market microstructure. That I really enjoy research. That messy code leads to
-                bad results and confusion and on my next project I need to have more discipline from day 1 and think about how everything will be scaled up
-                after the prototyping phase. </u>
+            <p> I worked on testing some hypotheses related to explaining asset returns as functions of
+                trading volume. Though we didn't find what we were looking for,
+                I did learn a lot about markets and the process of academic research.
             </p>
         <h3>NASA Johnson Space Center (Jun 2022 - Aug 2022 and Jun 2023 - Aug 2023)</h3>
             <figure>
-                <img src="nasa.jpg" style="width:40%">
+                <img src="nasa.jpg" style="width:25%">
+                <figcaption>The hanger where I worked</figcaption>
             </figure>
             <p>I spent two summers at NASA Johnson Space Center through a program called the Summer Robotics Academy.
                 The first summer I worked primarily on mechanical engineering tasks and the second summer 
                 I worked mostly on software related tasks. We also had a bomb squad inspired challenge my second summer - I was on the winning team.
                 The challenge was focused on communications in a field in the middle of JSC, so I proposed we use my dad's T-Mobile wifi pack. 
             </p>
-    <h3>Other: Feel free to reach out if you want to coffee chat</h3>
+    <h3>Other: If you are a younger student, feel free to reach out (email) if you want to coffee chat</h3>
 </body>
 </html>
