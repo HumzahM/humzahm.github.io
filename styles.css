@@ -1,5 +1,4 @@
 body {
-    max-width: 50%; /* Instead of 75%, fixed width for better control */
     margin: 0 auto; /* Centers all main content */
     font-family: 'Helvetica Neue', sans-serif; /* Applies font to body */
     font-size: 20px;
@@ -11,13 +10,17 @@ h1, h2, h3, h4 {
     text-align: center; /* Center titles for better visual balance */
 }
 
+h2 {
+    margin-bottom: -20px;
+}
+
 h3 {
     margin-top: 30px; /* Space out experience sections */
-    margin-bottom: 0px;
+    margin-bottom: 20px;
 }
 
 h4 {
-    margin-top: 0px;
+    margin-top: -20px;
 }
 
 a {
@@ -56,4 +59,24 @@ figcaption {
 
 p {
     margin-bottom: 20px; /* Better paragraph spacing */
+}
+
+nav {
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 18px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* make sure it stays above other content */
+    color: black; /* Darker text for better contrast */
+}
+
+.content {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 20px 10px; /* small horizontal padding for phones */
 }
