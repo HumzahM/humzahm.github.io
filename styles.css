@@ -6,17 +6,13 @@ body {
     line-height: 1.6; /* Improve readability */
 }
 
-h1, h2, h3, h4 {
+h1, h4 {
     text-align: center; /* Center titles for better visual balance */
 }
 
-h2 {
-    margin-bottom: -20px;
-}
-
 h3 {
-    margin-top: 30px; /* Space out experience sections */
-    margin-bottom: 20px;
+    margin-top: 0px; /* Space out experience sections */
+    margin-bottom: -20px;
 }
 
 h4 {
@@ -24,12 +20,8 @@ h4 {
 }
 
 a {
-    text-decoration: none; /* Remove underline by default */
-    color: #0072b1; /* LinkedIn-like blue color */
-}
-
-a:hover {
-    text-decoration: underline; /* Underline on hover */
+    color: #333;
+    text-decoration: underline;
 }
 
 div.intro-section {
@@ -44,7 +36,6 @@ figure {
 }
 
 img {
-    width: 150px; /* Uniform width for all images */
     display: block;
     margin: 0 auto;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for pop */
@@ -58,7 +49,7 @@ figcaption {
 }
 
 p {
-    margin-bottom: 20px; /* Better paragraph spacing */
+    margin-bottom: 5px; /* Better paragraph spacing */
 }
 
 nav {
@@ -81,6 +72,28 @@ nav {
     padding: 20px 10px; /* small horizontal padding for phones */
 }
 
-a {
-    color: #333;
+/* YouTube video - 3/4 width of the container */
+.youtube-embed {
+    width: 60%;
+    height: auto;
+    aspect-ratio: 16/9;
+    display: block;
+    margin: 0 auto; /* center it horizontally */
+}
+
+/* Project preview - full width */
+.project-embed {
+    width: 75%;
+    height: 600px;
+    border: 1px solid #ccc;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Make both responsive on small screens */
+@media (max-width: 700px) {
+    .youtube-embed,
+    .project-embed {
+        width: 100%;
+    }
 }
