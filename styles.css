@@ -67,14 +67,14 @@ nav {
 }
 
 .content {
-    max-width: 50%;
+    max-width: 60%;
     margin: 0 auto;
     padding: 20px 10px; /* small horizontal padding for phones */
 }
 
 /* YouTube video - 3/4 width of the container */
 .youtube-embed {
-    width: 60%;
+    width: 80%;
     height: auto;
     aspect-ratio: 16/9;
     display: block;
@@ -83,7 +83,7 @@ nav {
 
 /* Project preview - full width */
 .project-embed {
-    width: 75%;
+    width: 100%;
     height: 600px;
     border: 1px solid #ccc;
     display: block;
