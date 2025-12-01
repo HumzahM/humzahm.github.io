@@ -83,7 +83,7 @@ nav {
 
 /* Project preview - full width */
 .project-embed {
-    width: 100%;
+    width: 80%;
     height: 600px;
     border: 1px solid #ccc;
     display: block;
