@@ -5,47 +5,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="https://www.linkedin.com/in/humzahmerchant" target="_blank">LinkedIn</a>
-        <a href="papers.html">Papers and Presentations</a>
-        <a href="Humzah%20Merchant%20Resume.pdf" target="_blank">Resume</a>
-    </nav>
+    <div id="nav-placeholder"></div>
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('nav-placeholder').innerHTML = data);
+    </script>
     
     <div class="content">
         <h1>Hi, my name is Humzah Merchant.</h1>
         <h4>humzahm@uchicago.edu</h4>
         <figure style="margin: 0;">
-            <img src="pic.jpg" style="width:200px; display: block; margin: 0 auto;">
+            <img src="humzah_merchant.jpeg" style="width:200px; display: block; margin: 0 auto;">
         </figure>
 
-        <p>
-            I'm a senior at UChicago applying for PhDs. I'm interested in machine learning, asset pricing, and financial markets.  
+        <p style="text-align: center;">
+            I'm a senior at UChicago and I'll be joining <a href="https://galilai-group.github.io" target="_blank">Randall Balestriero</a> at Brown Computer Science in Fall 2026. I'm interested in machine learning for finance and predictive modeling.
         </p>
 
-        <h3>Highlights:</h3>
-        <p>
-        Won <b>Best Poster Award</b> at NeurIPS 2025 Generative AI in Finance Workshop
-            <img src="poster_win.jpg" style="width:300px; display: block; margin: 0 auto;">
-        </p>
-        <p>
-            <a href="https://nbviewer.org/github/HumzahM/UTC2025-Case2-Writeup/blob/main/case2.ipynb" target="_blank">
-                Won the research/data case within the UChicago Trading Competition - widely regarded as the top undergraduate trading competition  </a>
-        </p>
-        <iframe 
-            class="project-embed"
-            src="https://nbviewer.org/github/HumzahM/UTC2025-Case2-Writeup/blob/main/case2.ipynb">
-        </iframe>
-        <p>
-            <a href="https://www.youtube.com/watch?v=Wq-F-v5eDSM&t=2204s" target="_blank">
-                My advisor presenting some of my work at NBER Summer Institute Asset Pricing (36:45)</a>
-        </p>
-        <iframe 
-            class="youtube-embed"
-            src="https://www.youtube.com/embed/Wq-F-v5eDSM?start=2204" 
-            title="YouTube video player" 
-            frameborder="0" allowfullscreen>
-        </iframe>
     </div>
 </body>
 </html>

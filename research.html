@@ -5,12 +5,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="https://www.linkedin.com/in/humzahmerchant" target="_blank">LinkedIn</a>
-        <a href="papers.html">Papers and Presentations</a>
-        <a href="Humzah%20Merchant%20Resume.pdf" target="_blank">Resume</a>
-    </nav>
+    <div id="nav-placeholder"></div>
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('nav-placeholder').innerHTML = data);
+    </script>
 
     <div class="content">
         <h1>Conference Papers</h1>
@@ -54,6 +54,11 @@
 
         <h1>Other</h1>
         <ul>
+            <li><a href="https://github.com/HumzahM/Entity-Neutering-Discussion" target="_blank">Entity Neutering Discussion</a>
+            <br>This is a summary of work I did, mostly from January to May of 2025, which analyzed different look-ahead bias mitigation
+                techniques and developed several methods to measure both harmfulness and helpfulness. Dr. Levy used this data in discussion
+                of entity neutering and look-ahead bias more generally.
+            </li>
             <li><a href="https://nbviewer.org/github/HumzahM/UTC2025-Case2-Writeup/blob/main/case2.ipynb" target="_blank">UTC2025 Case 2 Writeup</a>
             <br>
             The UChicago Trading Competition is widely regarded as the top undergraduate trading competition and it attracts students
